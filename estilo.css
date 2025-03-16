@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: black;
+    background: radial-gradient(circle at center, rgb(250, 135, 5));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,9 +24,9 @@ body {
     background-repeat: repeat-x;
     background-size: cover;
     animation: moon-rotation 30s linear infinite;
-    box-shadow: inset 60px 0 40px black,
+    box-shadow: inset 60px 0 40px rgb(32, 240, 5),
                 inset 160px 0 60px rgba(0, 0, 0, 9),
-                inset -160px 0 60px rgba(248, 248, 213, 0.2)
+                inset -160px 0 60px rgba(233, 233, 3, 0.2)
 }
 
 .moon:before {
@@ -38,7 +38,7 @@ body {
     border-radius: 50%;
     width: 495px;
     height: 495px;
-    box-shadow: -60px 0 50px black;
+    box-shadow: -60px 0 50px rgb(245, 8, 79);
 }
 
 @keyframes moon-rotation {
@@ -48,7 +48,7 @@ body {
 
 @media screen and (max-widht: 500px) {
     body {
-        background: radial-gradient(circle at center, rgb(255, 255, 255));
+        background: radial-gradient(circle at center, rgb(252, 0, 0));
     }
 
     .moon {
@@ -59,7 +59,7 @@ body {
     .moon:before {
         width: 245px;
         height: 245px;
-        box-shadow: -60px 0 50px black;
+        box-shadow: -60px 0 50px rgb(1, 5, 253);
     }
 }
 
