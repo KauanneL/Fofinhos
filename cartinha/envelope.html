@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envelope Animado</title>
-    <link rel="stylesheet" href="envelope.css"> 
+    <link rel="stylesheet" href="envelope.css"> <!-- Conectando o CSS -->
 </head>
 <body>
 
-    <div id="envelope">
-        <div id="flap"></div> 
+    <label for="openEnvelope">Abrir o envelope:</label>
+    <select id="openEnvelope">
+        <option value="closed">Fechado</option>
+        <option value="open">Aberto</option>
+    </select>
+
+    <div id="envelope" class="closed">
+        <div id="flap"></div> <!-- Aba do envelope -->
         <div id="letter">
-            <p>Mensagem dentro do envelope</p>
+            <p>Te amo! 💌</p>
+        </div>
+        <div class="hearts">
+            <span class="heart"></span>
+            <span class="heart"></span>
+            <span class="heart"></span>
         </div>
     </div>
 
+    <script>
+        const select = document.getElementById("openEnvelope");
+        const envelope = document.getElementById("envelope");
+
+        select.addEventListener("change", function() {
+            if (this.value === "open") {
+                envelope.classList.add("open");
+                envelope.classList.remove("closed");
+            } else {
+                envelope.classList.add("closed");
+                envelope.classList.remove("open");
+            }
+        });
+    </script>
+
 </body>
 </html>
+
