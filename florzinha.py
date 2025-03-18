@@ -23,4 +23,5 @@ phi = golden_ang*(pi/180)
 
 for i in range(140):
     r = 4*sqrt(i)
-    
+    theta = i*phi
+    x = r*cos(theta)
