@@ -32,4 +32,6 @@ for i in range(140):
 
 # Definir pontos para desenhar linhas
 def point(x, y):
-    penup()
+    penup(), goto(x, y), pendown()
+    color('black'), fillcolor('#FFA216')
+    begin_fill(), circle(4), end_fill()
