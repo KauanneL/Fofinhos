@@ -35,3 +35,6 @@ def point(x, y):
     penup(), goto(x, y), pendown()
     color('black'), fillcolor('#FFA216')
     begin_fill(), circle(4), end_fill()
+
+hideturtle()
+done()
