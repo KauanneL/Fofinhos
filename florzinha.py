@@ -14,3 +14,13 @@ for i in range(16):
     circle(40,24)
 
 # Desenhar folhas no centro
+color('black')
+shape('circle')
+shapesize(0.5)
+fillcolor('#884513')
+golden_ang = 137.508
+phi = golden_ang*(pi/180)
+
+for i in range(140):
+    r = 4*sqrt(i)
+    
