@@ -29,4 +29,7 @@ for i in range(140):
     penup(), goto(x, y)
     setheading(i*golden_ang)
     pendown(), stamp()
-    
+
+# Definir pontos para desenhar linhas
+def point(x, y):
+    penup()
