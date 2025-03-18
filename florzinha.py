@@ -25,3 +25,4 @@ for i in range(140):
     r = 4*sqrt(i)
     theta = i*phi
     x = r*cos(theta)
+    y = r*sin(theta)
