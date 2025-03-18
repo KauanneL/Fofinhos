@@ -26,3 +26,7 @@ for i in range(140):
     theta = i*phi
     x = r*cos(theta)
     y = r*sin(theta)
+    penup(), goto(x, y)
+    setheading(i*golden_ang)
+    pendown(), stamp()
+    
