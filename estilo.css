@@ -23,7 +23,7 @@ body {
     background: url(./luaaa.jpeg);
     background-repeat: repeat-x;
     background-size: cover;
-    animation: moon-rotation 35s linear infinite;
+    animation: moon-rotation 30s linear infinite;
     box-shadow: inset 60px 0 40px black,
                 inset 160px 0 60px rgba(0, 0, 0, 9),
                 inset -160px 0 60px rgba(248, 248, 213, 0.2)
